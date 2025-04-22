@@ -74,7 +74,9 @@ namespace livraria
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            telinha2 emprestando = new telinha2();
+            emprestando.Closed += fechandoFormulario;
+            emprestando.ShowDialog();
         }
     }
 }
